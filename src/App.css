@@ -1,0 +1,106 @@
+.fabs {
+  bottom: 0;
+  position: fixed;
+  margin: 1em;
+  right: 0;
+  z-index: 998;
+}
+
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+  color: #f0f0f0;
+  margin: 25px auto 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  cursor: pointer;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  position: relative;
+  z-index: 998;
+  overflow: hidden;
+  background: #42a5f5;
+}
+
+.chat {
+  position: fixed;
+  right: 85px;
+  bottom: 20px;
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  opacity: 0;
+  box-shadow: 1px 1px 100px 2px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  -webkit-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+  -webkit-animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+  animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+}
+
+.chat_header {
+  font-size: 13px;
+  font-weight: 500;
+  color: #f3f3f3;
+  height: 55px;
+  background: #42a5f5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 8px
+}
+
+.chat_option {
+  float: left;
+  font-size: 15px;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: relative;
+  margin-right: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 400
+}
+
+.chat_option img {
+  border-radius: 50%;
+  width: 55px;
+  float: left;
+  margin: -30px 20px 10px 20px;
+  border: 4px solid rgba(0, 0, 0, 0.21);
+}
+
+.change_img img{
+  width: 35px;
+  margin: 0px 20px 0px 20px;
+}
+
+.loader {
+  margin: -10px 10px;
+}
+
+.chat_body {
+  position: relative;
+  background: #fff;
+  margin: 6px 0 0px 0;
+  height: 300px;
+  min-height: 0;
+  font-size: 12px;
+  line-height: 18px;
+  overflow-y: auto;
+  width: 100%;
+  float: right;
+  padding-bottom: 100px;
+}
